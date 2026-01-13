@@ -105,14 +105,14 @@ ul {
   opacity: 0.8;
 }
 
-.about__me {
-  max-width: 540px;
+.about {
+  background-color: #f9f9f9;
   margin: 0 auto;
   text-align: center;
   padding: 119px 0 110px;
 }
 
-.about__me-p {
+.about__text {
   color: #727272;
 }
 
@@ -151,7 +151,7 @@ section {
 }
 
 .how {
-  background-color: #eeeff1;
+  background-color: #f9f9f9;
   padding: 80px 0;
   text-align: center;
 }

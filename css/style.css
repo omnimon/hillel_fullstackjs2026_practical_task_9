@@ -73,11 +73,11 @@ ul {
 }
 
 .hero__title {
-  font-size: 48px;
+  font-size: 32px;
   margin-bottom: 20px;
 }
 
-.hero__description {
+.hero__text {
   color: var(--color-muted);
   margin-bottom: 30px;
   max-width: 540px;
@@ -111,8 +111,14 @@ ul {
   padding: 119px 0 110px;
 }
 
+.about .container {
+  max-width: 540px;
+  text-align: center;
+}
+
 .about__text {
-  color: #727272;
+  color: var(--color-muted);
+  font-size: 16px;
 }
 
 section {
@@ -124,7 +130,7 @@ section {
   padding: 100px 0;
 }
 
-.section-title {
+.about__title {
   font-size: 32px;
   text-align: center;
   margin-bottom: 40px;
@@ -161,6 +167,7 @@ section {
   text-align: center;
   margin-bottom: 16px;
 }
+
 .how__text {
   max-width: 540px;
   margin: 0 auto 32px;
@@ -168,7 +175,7 @@ section {
   font-size: 16px;
   line-height: 1.64;
   text-align: center;
-  color: #272725;
+  color: var(--color-muted);
 }
 
 .how__video-wrapper {

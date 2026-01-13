@@ -30,9 +30,8 @@ ul {
 }
 
 .container {
-  max-width: var(--container-width);
+  width: min(1110px, calc(100% - 40px));
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .header {
@@ -49,8 +48,18 @@ ul {
 
 .nav__list {
   display: flex;
-  gap: 30px;
   gap: 80px;
+}
+
+.nav__link:hover,
+.nav__link:focus-visible {
+  opacity: 0.75;
+}
+
+.nav__link--active {
+  opacity: 0.6;
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 4px;
 }
 
 .nav__link {
@@ -64,10 +73,6 @@ ul {
   background-color: #eeeff1;
 }
 
-.hero__container {
-  max-width: 1100px;
-}
-
 .hero__title {
   font-size: 48px;
   margin-bottom: 20px;
@@ -76,7 +81,7 @@ ul {
 .hero__description {
   color: var(--color-muted);
   margin-bottom: 30px;
-  width: 540px;
+  max-width: 540px;
 }
 
 .btn {
@@ -91,8 +96,13 @@ ul {
   text-transform: uppercase;
 }
 
-.btn--primary:visited {
-  color: #fff94a;
+.btn--primary:hover,
+.btn--primary:focus-visible {
+  opacity: 0.9;
+}
+
+.btn--primary:active {
+  opacity: 0.8;
 }
 
 .about__me {
@@ -100,9 +110,6 @@ ul {
   margin: 0 auto;
   text-align: center;
   padding: 119px 0 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .about__me-p {
@@ -223,16 +230,4 @@ section {
 
 .footer__copy {
   font-size: 13px;
-}
-
-a:visited {
-  color: rgb(180, 85, 180);
-}
-
-a:hover {
-  color: rgb(255, 255, 255);
-}
-
-a:active {
-  color: rgb(161, 71, 71);
 }

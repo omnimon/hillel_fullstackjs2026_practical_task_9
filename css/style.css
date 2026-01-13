@@ -53,12 +53,11 @@ ul {
 
 .nav__link:hover,
 .nav__link:focus {
-  opacity: 0.75;
   text-decoration: underline;
 }
 
 .nav__link:active {
-  opacity: 1;
+  opacity: 0.75;
   padding-bottom: 4px;
 }
 
